@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/WebPage">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta name="referrer" content="unsafe-url">
+    <meta name="referrer" content="origin">
+    <script type="text/javascript" src="https://asianload1.com/player/js/jquery.min.js?v=10.0.3"></script>
+    <script type="text/javascript" src="https://asianload1.com/js/jw8.21/jwplayer.js?v=10.0.3"></script>
+</head>
+
+<body>
+    <script>
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+        if (params.crypto){
+            let meta=document.createElement('meta');
+            meta.name = "crypto";
+            meta.content = params.crypto;
+            document.head.appendChild(meta);
+        }
+        if (params.cryptoScript){
+            let script=document.createElement('script');
+            script.type = "text/javascript";
+            script.src = "https://asianload1.com/js/crypto-js/crypto-js.js?v=10.0.3";
+            script.setAttribute("data-name","crypto");
+            script.setAttribute("data-value",params.cryptoScript);
+            document.head.appendChild(script);
+        }
+        if (params.ts){
+            let script=document.createElement('script');
+            script.type = "text/javascript";
+            script.src = "https://asianload1.com/js/player.min.js?v=10.0.3";
+            script.setAttribute("data-name","ts");
+            script.setAttribute("data-value",params.ts);
+            document.head.appendChild(script);
+        }
+    </script>
+</body>
+
+</html>
